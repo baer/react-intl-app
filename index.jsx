@@ -1,7 +1,16 @@
 "use strict";
 
+import {IntlProvider} from "react-intl";
 var ReactDOM = require("react-dom");
 
-var App = require('./app.jsx')
+var App = require('./src/app.jsx')
 
-ReactDOM.render(<App />, document.getElementById('content'))
+const WrappedApp = (props) => {
+  return (
+    <IntlProvider locale="en">
+      <App/>
+    </IntlProvider>
+  );
+}
+
+ReactDOM.render(<WrappedApp/>, document.getElementById('content'))

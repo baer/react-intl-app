@@ -2,34 +2,30 @@
   "name": "my-app",
   "version": "1.0.0",
   "description": "My Intl Application",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/baer/react-intl-app.git"
   },
-
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/baer/react-intl-app/issues"
   },
   "homepage": "https://github.com/baer/react-intl-app",
-
   "main": "index.js",
-
   "scripts": {
     "start": "npm run serve | npm run dev",
     "serve": "./node_modules/.bin/http-server -p 8080",
     "dev": "webpack-dev-server --progress --colors --port 8090"
   },
-  "dependencies": {
-    "react": "0.14.2",
-    "react-dom": "0.14.2"
-  },
   "devDependencies": {
     "babel-core": "5.8.22",
     "babel-loader": "5.3.2",
     "babel": "5.8.21",
+    "greeting": "baer/react-intl-component",
     "http-server": "0.8.5",
+    "react-dom": "0.14.2",
+    "react-intl": "2.0.0-beta-1",
+    "react": "0.14.2",
     "webpack-dev-server": "1.12.1",
     "webpack": "1.12.2"
   }
